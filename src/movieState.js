@@ -10,7 +10,7 @@ export const MovieState = () => {
 			title: "Music App",
 			mainImg: music1,
 			secondaryImg: music2,
-			url: "Portfolio/work/music-app",
+			url: "/work/music-app",
 			urlToWebsite:"https://georgeousdev.github.io/Music-App/",
 			comments: [
 				{
