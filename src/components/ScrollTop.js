@@ -4,10 +4,11 @@ import { useLocation } from "react-router-dom";
 const ScrollTop = () => {
 	const { pathname } = useLocation();
 	useEffect(() => {
-		window.onbeforeunload = function () {
-			window.scrollTo(0, 0);
-		};
-	}, []);
+		window.scroll({
+			top: 0,
+			left: 0,
+		});
+	}, [pathname]);
 	return null;
 };
 
