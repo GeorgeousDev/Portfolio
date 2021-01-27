@@ -29,7 +29,7 @@ const MyProjects = () => {
 			</motion.div>
 			<Movie>
 				<Link
-					to="/Portfolio/work/music-app"
+					to={process.env.PUBLIC_URL + "/#/work/music-app"}
 					style={{ textDecoration: "none", color: "white" }}
 				>
 					<motion.h2 variants={fade}>Music App</motion.h2>
@@ -43,7 +43,7 @@ const MyProjects = () => {
 
 			<Movie ref={element} variants={fade} animate={controls} initial="hidden">
 				<Link
-					to="/Portfolio/work/game-app"
+					to={process.env.PUBLIC_URL + "/#/work/game-app"}
 					style={{ textDecoration: "none", color: "white" }}
 				>
 					<h2>Game App</h2>

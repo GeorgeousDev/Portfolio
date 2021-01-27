@@ -9,33 +9,33 @@ const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <Link id="logo" to="/Portfolio/">
+        <Link id="logo" to= "/Portfolio/#/">
           Georgeous Dev
         </Link>
       </h1>
       <ul>
         <li>
-          <Link to="/Portfolio/">1. About me</Link>
+          <Link to="/Portfolio/#/">1. About me</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/Portfolio/" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/#/" ? "50%" : "0%" }}
           />
         </li>
         <li>
-          <Link to="/Portfolio/work/">2. My Projects</Link>
+          <Link to="/#/work/">2. My Projects</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname.includes("/work") ? "50%" : "0%" }}
+            animate={{ width: pathname.includes("/#/work/") ? "50%" : "0%" }}
           />
         </li>
         <li>
-          <Link to="/Portfolio/contact/">3. Contact </Link>
+          <Link to="/#/contact/">3. Contact </Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/#/contact/" ? "50%" : "0%" }}
           />
         </li>
       </ul>
