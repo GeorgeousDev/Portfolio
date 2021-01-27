@@ -11,6 +11,7 @@ export const MovieState = () => {
 			mainImg: music1,
 			secondaryImg: music2,
 			url: "/work/music-app",
+			urlToWebsite:"https://georgeousdev.github.io/Music-App/",
 			comments: [
 				{
 					title: "Data",
@@ -32,6 +33,7 @@ export const MovieState = () => {
 			title: "Game App",
 			mainImg: game1,
 			url: "/work/game-app",
+			urlToWebsite:"https://georgeousdev.github.io/Game-App/",
 			secondaryImg: game2,
 			comments: [
 				{

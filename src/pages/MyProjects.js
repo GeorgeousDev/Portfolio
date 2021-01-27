@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
 import music from "../img/musicApp1.png";
-import game from '../img/gameApp1.png'
+import game from "../img/gameApp1.png";
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -17,15 +17,11 @@ import {
 import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
+
 const MyProjects = () => {
 	const [element, controls] = useScroll();
 	return (
-		<Work
-			exit="exit"
-			variants={pageAnimation}
-			initial="hidden"
-			animate="show"
-		>
+		<Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
 			<motion.div variants={sliderContainer}>
 				<Frame1 variants={slider}></Frame1>
 				<Frame2 variants={slider}></Frame2>
@@ -33,9 +29,13 @@ const MyProjects = () => {
 				<Frame4 variants={slider}></Frame4>
 			</motion.div>
 			<Movie>
-				<motion.h2 variants={fade}>Music App</motion.h2>
-				<motion.div variants={lineAnim} className="line"></motion.div>
-				<Link to="/work/music-app">
+				<Link
+					to="/work/music-app"
+					style={{ textDecoration: "none", color: "white" }}
+				>
+					<motion.h2 variants={fade}>Music App</motion.h2>
+					<motion.div variants={lineAnim} className="line"></motion.div>
+
 					<Hide>
 						<motion.img variants={photoAnim} src={music} alt="music app" />
 					</Hide>
@@ -43,9 +43,10 @@ const MyProjects = () => {
 			</Movie>
 
 			<Movie ref={element} variants={fade} animate={controls} initial="hidden">
-				<h2>Game App</h2>
-				<motion.div variants={lineAnim} className="line"></motion.div>
-				<Link to="/work/game-app">
+				<Link to="/work/game-app" style={{ textDecoration: "none",color: "white" }}>
+					<h2 >Game App</h2>
+					<motion.div variants={lineAnim} className="line"></motion.div>
+
 					<img src={game} alt="game app" />
 				</Link>
 			</Movie>
@@ -69,7 +70,7 @@ const Work = styled(motion.div)`
 `;
 const Movie = styled(motion.div)`
 	padding-bottom: 10rem;
-	color:white;
+	color: white;
 
 	.line {
 		height: 0.5rem;
@@ -80,6 +81,9 @@ const Movie = styled(motion.div)`
 		width: 100%;
 		height: 90vh;
 		object-fit: cover;
+	}
+	h2 {
+		text-decoration: none;
 	}
 `;
 const Hide = styled.div`

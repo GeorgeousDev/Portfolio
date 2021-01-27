@@ -5,6 +5,8 @@ import { MovieState } from "../movieState";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+//icon
+import arrow from '../img/arrowRight.svg';
 
 const MovieDetail = () => {
 	const history = useHistory();
@@ -28,7 +30,13 @@ const MovieDetail = () => {
 					animate="show"
 				>
 					<HeadLine>
-						<h2>{movie.title}</h2>
+						<a
+							href={movie.urlToWebsite}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<h2>Click <img src={arrow} alt='arrow' />{ "  "}{movie.title}</h2>
+						</a>
 						<img src={movie.mainImg} alt="movie" />
 					</HeadLine>
 					<Comments>
@@ -59,21 +67,29 @@ const HeadLine = styled.div`
 	text-align: center;
 	h2 {
 		position: absolute;
-		top: 10%;
+		top: 7%;
 		left: 50%;
 		transform: translate(-50%, -10%);
+		img{
+			height:3rem;
+			width:3rem;
+		}
 	}
 	img {
 		width: 80%;
-		height: 80vh;
+		height: 90vh;
 		object-fit: cover;
-    border-radius:1rem;
+		border-radius: 1rem;
+	}
+	a{
+		cursor: pointer;
+		color: white;
 	}
 	@media (max-width: 1700px) {
-		min-height:40vh;
+		min-height: 40vh;
 		img {
 			object-fit: contain;
-      height: 40vh;
+			height: 40vh;
 		}
 	}
 `;
@@ -90,8 +106,8 @@ const Comments = styled.div`
 `;
 const CommentsStyle = styled.div`
 	padding: 5rem;
-  width:70rem;
-  min-height:30rem;
+	width: 70rem;
+	min-height: 30rem;
 	h3 {
 		font-size: 2rem;
 	}
@@ -104,27 +120,26 @@ const CommentsStyle = styled.div`
 	p {
 		padding: 2rem 0rem;
 	}
-  @media (max-width: 1500px) {
-		padding:0rem;
-    width:100%;
-    min-height:20rem;
+	@media (max-width: 1500px) {
+		padding: 0rem;
+		width: 100%;
+		min-height: 20rem;
 	}
 `;
 const ImageDisplay = styled.div`
 	min-height: 50vh;
 	text-align: center;
-  
+
 	img {
 		width: 80%;
 		height: 100vh;
 		object-fit: cover;
-    border-radius:1rem;
-    
+		border-radius: 1rem;
 	}
 	@media (max-width: 1700px) {
 		img {
 			object-fit: contain;
-      height:40vh;
+			height: 40vh;
 		}
 	}
 `;

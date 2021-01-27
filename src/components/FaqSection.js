@@ -28,7 +28,7 @@ const FaqSection = () => {
 						</p>
 					</div>
 				</Toggle>
-				<Toggle title="Skills?">
+				<Toggle title="Skills">
 					<div className="answer">
 						<p>
 							Apart from those mentioned above, I speak 3 languages ​​(Polish,
@@ -39,7 +39,7 @@ const FaqSection = () => {
 						</p>
 					</div>
 				</Toggle>
-				<Toggle title="My Strengths?">
+				<Toggle title="My Strengths">
 					<div className="answer">
 						<p>
 							Stubbornness in pursuit of goals, <br />
