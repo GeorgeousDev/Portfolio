@@ -23,7 +23,7 @@ const Nav = () => {
           />
         </li>
         <li>
-          <Link to="/Portfolio/work">2. My Projects</Link>
+          <Link to="/Portfolio/work/">2. My Projects</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
@@ -31,7 +31,7 @@ const Nav = () => {
           />
         </li>
         <li>
-          <Link to="/Portfolio/contact">3. Contact </Link>
+          <Link to="/Portfolio/contact/">3. Contact </Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
