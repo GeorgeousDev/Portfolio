@@ -10,7 +10,7 @@ export const MovieState = () => {
 			title: "Music App",
 			mainImg: music1,
 			secondaryImg: music2,
-			url: "/work/music-app",
+			url: "/Portfolio/work/music-app",
 			urlToWebsite:"https://georgeousdev.github.io/Music-App/",
 			comments: [
 				{
@@ -32,7 +32,7 @@ export const MovieState = () => {
 		{
 			title: "Game App",
 			mainImg: game1,
-			url: "/work/game-app",
+			url: "/Portfolio/work/game-app",
 			urlToWebsite:"https://georgeousdev.github.io/Game-App/",
 			secondaryImg: game2,
 			comments: [

@@ -17,7 +17,6 @@ import {
 import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
-
 const MyProjects = () => {
 	const [element, controls] = useScroll();
 	return (
@@ -30,7 +29,7 @@ const MyProjects = () => {
 			</motion.div>
 			<Movie>
 				<Link
-					to="/work/music-app"
+					to="/Portfolio/work/music-app"
 					style={{ textDecoration: "none", color: "white" }}
 				>
 					<motion.h2 variants={fade}>Music App</motion.h2>
@@ -43,8 +42,11 @@ const MyProjects = () => {
 			</Movie>
 
 			<Movie ref={element} variants={fade} animate={controls} initial="hidden">
-				<Link to="/work/game-app" style={{ textDecoration: "none",color: "white" }}>
-					<h2 >Game App</h2>
+				<Link
+					to="/Portfolio/work/game-app"
+					style={{ textDecoration: "none", color: "white" }}
+				>
+					<h2>Game App</h2>
 					<motion.div variants={lineAnim} className="line"></motion.div>
 
 					<img src={game} alt="game app" />
