@@ -4,6 +4,8 @@ import javascript from "../img/javascript.svg";
 import react from "../img/react.svg";
 import html from "../img/html5.svg";
 import css from "../img/css.svg";
+import bootstrap from "../img/bootstrap.svg";
+import node from "../img/node.svg";
 import programming from "../img/programming3.jpg";
 //Styles
 import { About, Description, Image } from "../styles";
@@ -31,7 +33,7 @@ const ServicesSection = () => {
 							<img alt="icon" src={javascript} />
 							<h3>JavScript</h3>
 						</div>
-						<p>Lastest ES6 solutions</p>
+						<p>Lastest ES6 solutions.</p>
 					</Card>
 					<Card>
 						<div className="icon">
@@ -40,7 +42,7 @@ const ServicesSection = () => {
 						</div>
 						<p>
 							Styled Component Router
-							<br /> Redux
+							<br /> Redux.
 						</p>
 					</Card>
 					<Card>
@@ -48,7 +50,7 @@ const ServicesSection = () => {
 							<img alt="icon" src={html} />
 							<h3>HTML5</h3>
 						</div>
-						<p>Well-organized and clear HTML code allows for faster work</p>
+						<p>Well-organized and clear HTML code allows for faster work.</p>
 					</Card>
 					<Card>
 						<div className="icon">
@@ -58,6 +60,24 @@ const ServicesSection = () => {
 						<p>
 							You don't judge a book by its cover, but a book with a beautiful
 							cover will attract many more eyes.
+						</p>
+					</Card>
+					<Card>
+						<div className="icon">
+							<img alt="icon" src={bootstrap} />
+							<h3>Bootstrap</h3>
+						</div>
+						<p>
+						The world’s most popular front-end open source toolkit.
+						</p>
+					</Card>
+					<Card>
+						<div className="icon">
+							<img alt="icon" src={node} />
+							<h3>Node JS</h3>
+						</div>
+						<p>
+						Open source server environment.
 						</p>
 					</Card>
 				</Cards>

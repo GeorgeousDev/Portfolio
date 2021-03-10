@@ -99,6 +99,11 @@ const Social = styled(motion.div)`
 			font-size: 2rem;
 		}
 	}
+	@media (max-width: 760px) {
+		h2 {
+			font-size: 1.5rem;
+		}
+	}
 `;
 
 export default Contact;
