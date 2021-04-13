@@ -13,7 +13,7 @@ export const About = styled(motion.div)`
 		flex-direction: column;
 		padding: 2rem 2rem;
 		text-align: center;
-    overflow-x: hidden;
+		overflow-x: hidden;
 	}
 `;
 export const Description = styled.div`
@@ -28,7 +28,7 @@ export const Description = styled.div`
 		flex: auto;
 		align-items: center;
 		padding-right: 0rem;
-    overflow-x: hidden;
+		overflow-x: hidden;
 		button {
 			margin: 2rem 0rem 5rem 0rem;
 		}
@@ -44,8 +44,10 @@ export const Image = styled.div`
 		object-fit: cover;
 		border-radius: 1rem;
 	}
-  @media (max-width: 1300px) {
-    flex: auto;
+	@media (max-width: 1300px) {
+		flex: auto;
+		img {
+			height: 100%;
 		}
 	}
 `;
